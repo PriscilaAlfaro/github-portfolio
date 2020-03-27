@@ -1,0 +1,135 @@
+            .main {
+                font-family: 'Poppins', sans-serif;
+                width: 100%
+            }
+            
+            header {
+                text-align: center;
+            }
+            
+            .mainSub {
+                font-size: 20px;
+                color: hsl(234, 12%, 34%);
+            }
+            
+            .mainTitle {
+                font-weight: 200;
+                margin: 60px 0px 0px 0px;
+            }
+            
+            .subTitle {
+                font-weight: 600;
+                margin: 0px;
+            }
+            
+            p {
+                font-weight: 400;
+                font-size: 17px;
+                color: hsl(229, 6%, 66%);
+                display: inline-flex;
+                max-width: 600px;
+                margin-bottom: 30px;
+            }
+            
+            .boxes {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .box1,
+            .box2,
+            .box3,
+            .box4 {
+                text-align: left;
+                border-radius: 2%;
+                display: flex;
+                width: 395px;
+                height: 250px;
+                flex-direction: column;
+                margin: 30px 15px;
+                -webkit-box-shadow: 0px 12px 37px -14px rgba(21, 26, 82, 1);
+                -moz-box-shadow: 0px 12px 37px -14px rgba(21, 26, 82, 1);
+                box-shadow: 0px 12px 37px -14px rgba(21, 26, 82, 1);
+            }
+            
+            .text {
+                padding: 30px 80px 60px 30px;
+            }
+            
+            .boxTitle {
+                font-weight: 600;
+                font-size: 19px;
+                color: hsl(234, 12%, 34%);
+            }
+            
+            .boxText {
+                font-size: 14px;
+                color: hsl(229, 6%, 66%);
+                width: 265px;
+            }
+            
+            .box1 {
+                border-top: 4px solid hsl(180, 62%, 55%);
+            }
+            
+            .box2 {
+                border-top: 4px solid hsl(0, 78%, 62%);
+            }
+            
+            .box3 {
+                border-top: 4px solid hsl(34, 97%, 64%);
+            }
+            
+            .box4 {
+                border-top: 4px solid hsl(212, 86%, 64%);
+            }
+            
+            img {
+                height: 70px;
+                width: 70px;
+                align-self: flex-end;
+                padding: 0px 30px;
+                position: relative;
+            }
+            
+            @media only screen and (min-width:375px) and (max-width: 1024px) {
+                .main {
+                    max-width: auto;
+                    font-size: 60%;
+                }
+                .boxes {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    flex-shrink: 3;
+                }
+                .box1,
+                .box4 {
+                    flex-shrink: 3;
+                    max-width: 70%;
+                    max-height: 70%;
+                    align-content: center;
+                }
+                .centro {
+                    justify-content: center;
+                    align-self: flex-end;
+                    flex-wrap: wrap;
+                    max-width: 75%;
+                    max-height: 75%
+                }
+                .box2,
+                .box3 {
+                    flex-shrink: 4;
+                    max-width: 95%;
+                    max-height: 95%;
+                    align-content: left;
+                }
+                header {
+                    flex-shrink: 3;
+                    font-weight: 60%;
+                }
+                img {
+                    max-height: 70px;
+                    max-width: 70px;
+                }
+            }
